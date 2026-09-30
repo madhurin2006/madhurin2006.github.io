@@ -1,1 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhuri N - Portfolio</title>
+  <style>
+    :root {
+      --bg-dark: #0a111e;
+      --card-bg: #131f37;
+      --accent-blue: #3b82f6;
+      --accent-cyan: #06b6d4;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: #1f293d;
+    }
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: rgba(10, 17, 30, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-color);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-blue);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--accent-cyan);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+    .hero {
+      padding: 4rem 0;
+      text-align: left;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero .subtitle {
+      font-size: 1.2rem;
+      color: var(--accent-cyan);
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-blue);
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .link-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent-blue);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .link-btn:hover {
+      background-color: #2563eb;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .skill-tag {
+      background-color: var(--card-bg);
+      border: 1px solid var(--accent-blue);
+      color: var(--text-main);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-color);
+      font-size: 0.875rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Madhuri N</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#github-work">GitHub Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- HERO / ABOUT -->
+    <section id="about" class="hero">
+      <h1>Hi, I'm Madhuri N</h1>
+      <div class="subtitle">3rd Semester CSIT Student</div>
+      <p style="max-width: 800px; color: var(--text-muted); font-size: 1.05rem;">
+        I am a 3rd semester CSIT student interested in learning how technology can be used to solve real-world problems. I am building my programming fundamentals through C, C++, data structures, and problem-solving while exploring different areas of computer science. Through academic projects and hands-on activities, I have started gaining experience in programming, logical thinking, and developing practical solutions.
+      </p>
+    </section>
+
+    <!-- ACADEMIC / PRACTICAL PROJECTS -->
+    <section id="projects">
+      <h2>Academic & Practical Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>2D Graphics</h3>
+          <p>Implementation of 2D graphics principles, rendering techniques, and algorithms using basic programming foundations.</p>
+        </div>
+        <div class="card">
+          <h3>Crime Prediction</h3>
+          <p>A Python-based project that predicts the number of crimes using statistical patterns extracted from available datasets.</p>
+        </div>
+        <div class="card">
+          <h3>Line Editor</h3>
+          <p>A lightweight text/line editing program designed to handle basic file operations and string manipulations.</p>
+        </div>
+        <div class="card">
+          <h3>Robotic Car</h3>
+          <p>A hardware/software project involving microcontrollers and logic control to navigate and execute directional movements.</p>
+        </div>
+        <div class="card">
+          <h3>Smart Onion Preservation System</h3>
+          <p>An innovative system aimed at monitoring environmental parameters to prevent spoilage and extend storage life for onions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB PORTFOLIO ACTIVITIES -->
+    <section id="github-work">
+      <h2>GitHub Portfolio Activities</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Hello World Repository</h3>
+          <p>Initial C repository created to demonstrate fundamental compilation, version control basics, and setup environment.</p>
+          <a href="https://github.com/madhurin2006/hello-world-c.git" class="link-btn" target="_blank" rel="noopener">View Repository</a>
+        </div>
+        <div class="card">
+          <h3>Collaborative Programming Work</h3>
+          <p>Repository used for group projects and collaborative programming tasks during coursework.</p>
+          <a href="https://github.com/madhurin2006/R25EJ061_Madhuri_N.git" class="link-btn" target="_blank" rel="noopener">View Repository</a>
+        </div>
+        <div class="card">
+          <h3>LeetCode Solutions</h3>
+          <p>Collection of data structures and algorithms practice problems solved on LeetCode to improve logic and coding speed.</p>
+          <a href="https://github.com/madhurin2006/Leetcode-Solutions.git" class="link-btn" target="_blank" rel="noopener">View Repository</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">Data Structures</span>
+        <span class="skill-tag">Logical Thinking</span>
+        <span class="skill-tag">Problem Solving</span>
+      </div>
+    </section>
+
+    <!-- CAREER & LEARNING GOALS -->
+    <section id="goals">
+      <h2>Career & Learning Goals</h2>
+      <div class="card">
+        <p style="color: var(--text-main); font-size: 1rem; margin-bottom: 0;">
+          I want to build a good career in technology, with an interest in becoming a <strong>Data Analyst</strong>. I want to strengthen data handling, analysis, and problem-solving skills. I also want to learn <strong>Full Stack Development</strong> so I can understand both frontend and backend development.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1rem;">Feel free to check out my repositories or get in touch:</p>
+      <div class="contact-links">
+        <a href="https://github.com/madhurin2006" class="link-btn" target="_blank" rel="noopener">GitHub Profile</a>
+        <a href="#" class="link-btn" style="background-color: #374151;">LinkedIn (Placeholder)</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© Madhuri N | 3rd Semester CSIT Student Portfolio</p>
+  </footer>
+
+</body>
+</html>
+```
+
+### What Changed in Refinement 1:
+- Created a clear dedicated section for **GitHub Portfolio Activities** distinct from your 5 main projects.
+- Added direct links to your real repositories (`hello-world-c.git`, `R25EJ061_Madhuri_N.git`, and `Leetcode-Solutions.git`).
+- Added 2D Graphics to the academic projects list.
+- Kept all original bio details, skills, and goals intact without adding fake certifications or technologies.
+
+---
+
+### Next Step: Refinement Prompt 2
+To satisfy the rubric requirement of **at least 2 follow-up refinements**, we now need Refinement Prompt 2. 
+
+**Proposed Refinement Prompt 2:**
+> "Improve the overall UI aesthetics and accessibility without changing any text content or links. Add smooth scrolling for navigation links, subtle card hover animations, an inline status tag for current learning goals, and ensure the color contrast passes WCAG AA standards. Ensure the page remains lightweight and single-file for easy deployment to GitHub Pages."
+
+Bro, reply with **"done"** (or let me know if you want any tweaks to Refinement Prompt 2) and we will move right to generating the final portfolio and assembling your complete Activity 12 Word report!
+
+*(Note: Would you like me to turn this into a slide presentation?)*
